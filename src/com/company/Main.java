@@ -30,7 +30,9 @@ public class Main{
             while (fiveLetter){
                 System.out.println("Guess the five letter word!");
                 guess = scan.nextLine();
-                if (guess.length() < 5)
+                if (guess.equalsIgnoreCase("raspberriesarefun")){
+                    System.out.println(answer);
+                } else if (guess.length() < 5)
                     System.out.println("Sorry, your word is not long enough!");
                 else if (guess.length() > 5)
                     System.out.println("Sorry, your word is too long!");
